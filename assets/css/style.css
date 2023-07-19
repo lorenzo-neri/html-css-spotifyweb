@@ -8,10 +8,38 @@ body {
     font-family: 'DM Sans', sans-serif;
 }
 
+.container{
+    padding: 1rem;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-2 {
+    width: calc(100% / 12 * 2);
+    padding: 1rem;
+}
+
 /* flex */
 .d-flex {
     display: flex;
 }
+
+.jc-end{
+    justify-content: end;
+}
+
+.jc-center{
+    justify-content: center;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+/**************** Desktop First ****************/
 
 /********* #region page_top *********/
 /* #region side_bar */
@@ -20,7 +48,7 @@ body {
     height: calc(100vh - 90px);
 }
 
-.logo_desktop{
+.logo_desktop {
     width: 70%;
 }
 
@@ -32,23 +60,67 @@ main {
     width: calc(100vw - 230px);
 }
 
+/* #menu */
+#menu{
+    max-width: 625px;
+    width: 60%;
+    margin: auto;
+    gap: 1rem;
+    font-size: .8rem;
+}
+
 /* #endregion main */
 /********* #endregion page_top *********/
 
 /********* #region page_bottom *********/
 #page_bottom {
     height: 90px;
+    z-index: 999;
+    position: relative;
 }
 
 /********* #endregion page_bottom *********/
+
+/********* #region media queries *********/
+
+/* #region laptop */
+
+@media screen and (max-width: 1200px) {
+
+}
+
+/* #endregion laptop */
+
+/* #region tablet */
+
+@media screen and (max-width: 768px) {
+
+}
+
+/* #endregion tablet */
+
+/* #region mobile */
+
+@media screen and (max-width: 475px) {
+
+
+}
+
+/* #endregion mobile */
+
+/********* #endregion media queries *********/
 
 /* #region debug */
 .debug #side_bar {
     background-color: blue;
 }
 
-.debug main{
+.debug main {
     background-color: green;
+}
+
+.debug #upgrade{
+    background-color: rgba(0, 0, 0, 0.218);
 }
 
 .debug #page_bottom {
