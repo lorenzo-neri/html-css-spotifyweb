@@ -72,20 +72,26 @@ main {
 
 /* #upgrade */
 #upgrade {
-    padding: 1rem 5px;
+    padding: 1rem 15px;
     position: sticky;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.337);
+    background-color: rgba(0, 0, 0, 0.201);
+    z-index: 1000;
 }
 
 .btn {
     color: var(--sw-white);
-    background-color: var(--sw-black);
+    background-color: rgba(20, 11, 11, 0.201);
     border: 1px solid var(--sw-white);
     padding: .7rem 3rem;
     border-radius: 30px;
     font-size: .9rem;
     text-decoration: none;
+    transition: .3s;
+}
+
+.btn:hover{
+    scale: 1.1;
 }
 
 main>.container {
@@ -122,6 +128,12 @@ main h4+div{
 
 main h4{
     padding-top: 1rem;
+}
+
+.square{
+    background-color: rgba(20, 11, 11, 0.201);
+    height: 100%;
+    width: 100%;
 }
 
 /* #menu */
