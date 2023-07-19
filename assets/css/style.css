@@ -20,6 +20,10 @@ body {
     height: calc(100vh - 90px);
 }
 
+.logo_desktop{
+    width: 70%;
+}
+
 /* #endregion side_bar */
 
 /* #region main */
