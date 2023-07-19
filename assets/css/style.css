@@ -14,22 +14,42 @@ body {
 }
 
 /********* #region page_top *********/
-
 /* #region side_bar */
+#side_bar {
+    width: 230px;
+    height: calc(100vh - 90px);
+}
 
 /* #endregion side_bar */
 
 /* #region main */
+main {
+    height: calc(100vh - 90px);
+    width: calc(100vw - 230px);
+}
 
 /* #endregion main */
-
 /********* #endregion page_top *********/
 
 /********* #region page_bottom *********/
+#page_bottom {
+    height: 90px;
+}
 
 /********* #endregion page_bottom *********/
 
 /* #region debug */
+.debug #side_bar {
+    background-color: blue;
+}
+
+.debug main{
+    background-color: green;
+}
+
+.debug #page_bottom {
+    background-color: red;
+}
 
 /* #endregion debug */
 
