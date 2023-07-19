@@ -8,3 +8,38 @@ body {
     font-family: 'DM Sans', sans-serif;
 }
 
+/* flex */
+.d-flex {
+    display: flex;
+}
+
+/********* #region page_top *********/
+
+/* #region side_bar */
+
+/* #endregion side_bar */
+
+/* #region main */
+
+/* #endregion main */
+
+/********* #endregion page_top *********/
+
+/********* #region page_bottom *********/
+
+/********* #endregion page_bottom *********/
+
+/* #region debug */
+
+/* #endregion debug */
+
+/* #region colors */
+:root {
+    --sw-white: #ffffff;
+    --sw-black: #000000;
+    --sw-primary: #141922 --sw-light: #c1c1c1;
+    --sw-dark: #282828;
+    --sw-dark-soft: #727479;
+}
+
+/* #endregion colors */
