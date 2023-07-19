@@ -19,12 +19,16 @@ body {
 
 .col-2 {
     width: calc(100% / 12 * 2);
-    padding: 1rem;
+    padding: .9rem;
 }
 
 /* utilities */
 .ta-center {
     text-align: center;
+}
+
+.px_2{
+    padding-bottom: 1rem;
 }
 
 /* flex */
@@ -62,11 +66,11 @@ body {
 
 /* #region main */
 main {
-    height: calc(100vh - 90px);
     width: calc(100vw - 230px);
     background-color: var(--sw-primary);
 }
 
+/* #upgrade */
 #upgrade {
     padding: 1rem 5px;
     position: sticky;
@@ -87,11 +91,37 @@ main {
 main>.container {
     overflow: auto;
     width: 100%;
-    height: 100%;
+    height: calc(100vh - 90px - 74.38px);
 }
 
 main img {
     width: 100%;
+}
+
+main h2{
+    padding: 1rem;
+}
+
+main h4,
+main h2{
+    color: var(--sw-white);
+}
+
+main h2+div,
+main h4+div{
+    color: var(--sw-dark-soft);
+}
+
+main h2+div{
+    padding-left: 1rem;
+}
+
+main h4+div{
+    padding-top: .5rem;
+}
+
+main h4{
+    padding-top: 1rem;
 }
 
 /* #menu */
@@ -101,6 +131,24 @@ main img {
     margin: auto;
     gap: 1rem;
     font-size: .8rem;
+}
+
+#menu a {
+    text-decoration: none;
+    color: var(--sw-dark-soft);
+    font-weight: 600;
+    transition: .3s;
+}
+
+#menu a:hover{
+    color: var(--sw-white);
+}
+
+.underline{
+    width: 50%;
+    margin: auto;
+    padding-top: 5px;
+    border-bottom: 2px solid var(--sw-success);
 }
 
 /* popular_artists */
