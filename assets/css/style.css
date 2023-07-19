@@ -65,6 +65,13 @@ main {
     width: calc(100vw - 230px);
 }
 
+main>.container{
+    overflow: auto;
+}
+
+main img{
+    width: 100%;
+}
 /* #menu */
 #menu{
     max-width: 625px;
@@ -74,9 +81,9 @@ main {
     font-size: .8rem;
 }
 
-/* recently_played */
-#recently_played>.row>.col-2>.card>img{
-    width: 100%;
+/* popular_artists */
+#popular_artists img{
+    border-radius: 50%;
 }
 
 /* #endregion main */
