@@ -22,6 +22,10 @@ body {
     padding: .9rem;
 }
 
+a{
+    text-decoration: none;
+}
+
 /* utilities */
 .ta-center {
     text-align: center;
@@ -31,9 +35,9 @@ body {
     padding-bottom: 1rem;
 }
 
-.p_0 {
+/* .p_0 {
     padding: 0;
-}
+} */
 
 /* flex */
 .d-flex {
@@ -52,6 +56,14 @@ body {
     flex-wrap: wrap;
 }
 
+.fd-column{
+    flex-direction: column;
+}
+
+.ai-center{
+    align-items: center;
+}
+
 /**************** Desktop First ****************/
 
 /********* #region page_top *********/
@@ -60,10 +72,28 @@ body {
     width: 230px;
     height: calc(100vh - 90px);
     background-color: var(--sw-black);
+    color: var(--sw-light);
 }
 
 .logo_desktop {
     width: 70%;
+    padding-bottom: 1rem;
+}
+
+li{
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+#side_bar li>a{
+    color: var(--sw-light);
+    font-size: .9rem;
+}
+
+#side_bar li>a>img{
+    width: 1.8rem;
+    filter: invert(0.2);
+    padding-right: .3rem;
 }
 
 /* #endregion side_bar */
@@ -174,7 +204,6 @@ main h4 {
 }
 
 #menu a {
-    text-decoration: none;
     color: var(--sw-dark-soft);
     font-weight: 600;
     transition: .3s;
