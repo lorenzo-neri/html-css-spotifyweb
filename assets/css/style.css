@@ -6,7 +6,7 @@
 
 /* passando ad un computer più piccolo mi sono reso conto di un bug: il mio html, la mia pagina per intera, presenta uno spazio bianco sottostante, che dal computer principale non è visibile, riesco a togliere questo spazio bianco dando all'html un overflow:hidden; ma non so da cosa dipenda
 CHIEDI AL MAIN TEACHER O A UN TUTOR */
-html{
+html {
     overflow: hidden;
 }
 
@@ -107,6 +107,33 @@ li {
     padding-bottom: 10px;
 }
 
+.home_lg {
+    position: relative;
+}
+
+ul>li>a:hover,
+.add_playlist:hover,
+.personal_playlist>ul>li:hover,
+.install:hover {
+    filter: brightness(10);
+}
+
+ul>li>a,
+.add_playlist,
+.personal_playlist>ul>li,
+.install {
+    transition: .3s;
+}
+
+.vertical_underline {
+    height: 30px;
+    background-color: var(--sw-success);
+    width: 3px;
+    position: absolute;
+    left: -1rem;
+    border-radius: 50px;
+}
+
 #side_bar li>a {
     color: var(--sw-dark-soft);
     font-size: .9rem;
@@ -202,8 +229,10 @@ li {
 
 /* #region main */
 main {
-    width: calc(100vw - 230px);
     background-color: var(--sw-primary);
+    overflow: auto;
+    width: 100%;
+    height: calc(100vh - 90px);
 }
 
 /* #upgrade */
@@ -230,11 +259,7 @@ main {
     scale: 1.1;
 }
 
-main {
-    overflow: auto;
-    width: 100%;
-    height: calc(100vh - 90px);
-}
+/* /.upgrade */
 
 main img {
     width: 100%;
