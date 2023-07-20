@@ -397,6 +397,28 @@ main h4 {
         width: 100%;
     }
 
+    .install_icon_sm>img{
+        padding-right: 5px;
+        width: 2rem;
+    }
+
+    .profile_icon_sm{
+        background-color: var(--sw-dark-soft);
+        border-radius: 50%;
+        padding: 2px;
+        width: 1.9rem;
+        aspect-ratio: 1;
+        position: relative;
+        margin-bottom: .5rem;
+    }
+    
+    .profile_icon_sm>img{
+        width: 1.3rem;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
     /* main */
     main {
         width: calc(100vw - 50px);
