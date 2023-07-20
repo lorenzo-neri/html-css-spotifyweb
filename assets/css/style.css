@@ -12,6 +12,10 @@ body {
     padding: 1rem;
 }
 
+.container_sm{
+    padding: 10px;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -52,6 +56,10 @@ a{
     justify-content: center;
 }
 
+.jc-between{
+    justify-content: space-between;
+}
+
 .wrap {
     flex-wrap: wrap;
 }
@@ -76,11 +84,11 @@ a{
     width: 230px;
     height: calc(100vh - 90px);
     background-color: var(--sw-black);
-    color: var(--sw-light);
+    color: var(--sw-dark-soft);
 }
 
 .side_bar_lg{
-    justify-content: space-between;
+    height: 100%;
 }
 
 .logo_desktop {
@@ -94,13 +102,13 @@ li{
 }
 
 #side_bar li>a{
-    color: var(--sw-light);
+    color: var(--sw-dark-soft);
     font-size: .9rem;
 }
 
 #side_bar li>a>img{
     width: 1.8rem;
-    filter: invert(0.2);
+    filter: invert(0.4);
     padding-right: .3rem;
 }
 
@@ -143,10 +151,46 @@ li{
 }
 
 /* side_bar_bottom */
-.side_bar_bottom{
-    
+.install{
+    gap: .5rem;
+    font-size: .8rem;
 }
 
+.install_icon>img{
+    width: 1.3rem;
+}
+
+#line{
+    height: 1px;
+    background-color: var(--sw-dark-soft);
+    margin: .3rem 0;
+}
+
+.profile{
+    gap: .5rem;
+    padding-top: .5rem;
+}
+
+.profile_icon{
+    background-color: var(--sw-dark-soft);
+    border-radius: 50%;
+    padding: 2px;
+    width: 1.9rem;
+    aspect-ratio: 1;
+    position: relative;
+}
+
+.profile_icon>img{
+    width: 1.3rem;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.profile_name{
+    color: var(--sw-white);
+    font-weight: 700;
+}
 /* #endregion side_bar */
 
 /* #region main */
@@ -203,7 +247,8 @@ main h4+div {
     color: var(--sw-dark-soft);
 }
 
-main h2+div {
+#create_for h2+div,
+#popular_artists h2+div {
     padding-left: 1rem;
     padding-bottom: 1rem;
 }
@@ -330,6 +375,26 @@ main h4 {
 
     .side_bar_lg {
         display: none;
+    }
+
+    .side_bar_sm{
+        height: 100%;
+    }
+
+    .home_sm{
+        padding-top: 6px;
+    }
+
+    .home_sm,
+    .search_sm,
+    .library_sm{
+        scale: .9;
+        filter: invert(0.4);
+    }
+
+    /* .side_bar_top */
+    .logo_sm>img{
+        width: 100%;
     }
 
     /* main */
