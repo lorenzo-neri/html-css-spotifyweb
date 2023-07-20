@@ -12,7 +12,7 @@ body {
     padding: 1rem;
 }
 
-.container_sm{
+.container_sm {
     padding: 10px;
 }
 
@@ -26,7 +26,7 @@ body {
     padding: .9rem;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -56,7 +56,7 @@ a{
     justify-content: center;
 }
 
-.jc-between{
+.jc-between {
     justify-content: space-between;
 }
 
@@ -64,15 +64,15 @@ a{
     flex-wrap: wrap;
 }
 
-.fd-column{
+.fd-column {
     flex-direction: column;
 }
 
-.ai-center{
+.ai-center {
     align-items: center;
 }
 
-.s-between{
+.s-between {
     justify-content: space-between;
 }
 
@@ -87,7 +87,7 @@ a{
     color: var(--sw-dark-soft);
 }
 
-.side_bar_lg{
+.side_bar_lg {
     height: 100%;
 }
 
@@ -96,38 +96,38 @@ a{
     padding-bottom: 1rem;
 }
 
-li{
+li {
     list-style: none;
     padding-bottom: 10px;
 }
 
-#side_bar li>a{
+#side_bar li>a {
     color: var(--sw-dark-soft);
     font-size: .9rem;
 }
 
-#side_bar li>a>img{
+#side_bar li>a>img {
     width: 1.8rem;
     filter: invert(0.4);
     padding-right: .3rem;
 }
 
-.playlist{
+.playlist {
     padding: .6rem 0;
 }
 
-.playlist .title{
+.playlist .title {
     color: var(--sw-white);
     padding-bottom: .5rem;
 }
 
-.add_playlist{
+.add_playlist {
     gap: .5rem;
     font-size: .9rem;
     font-weight: 500;
 }
 
-.btn_add{
+.btn_add {
     width: 25%;
     aspect-ratio: 1;
     background-color: var(--sw-light);
@@ -135,14 +135,14 @@ li{
     position: relative;
 }
 
-.btn_add>.fa-solid{
+.btn_add>.fa-solid {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.personal_playlist{
+.personal_playlist {
     margin: 1rem 0;
     font-size: 0.9rem;
     line-height: 2;
@@ -151,27 +151,27 @@ li{
 }
 
 /* side_bar_bottom */
-.install{
+.install {
     gap: .5rem;
     font-size: .8rem;
 }
 
-.install_icon>img{
+.install_icon>img {
     width: 1.3rem;
 }
 
-#line{
+#line {
     height: 1px;
     background-color: var(--sw-dark-soft);
     margin: .3rem 0;
 }
 
-.profile{
+.profile {
     gap: .5rem;
     padding-top: .5rem;
 }
 
-.profile_icon{
+.profile_icon {
     background-color: var(--sw-dark-soft);
     border-radius: 50%;
     padding: 2px;
@@ -180,17 +180,18 @@ li{
     position: relative;
 }
 
-.profile_icon>img{
+.profile_icon>img {
     width: 1.3rem;
     position: absolute;
     left: 50%;
     transform: translate(-50%);
 }
 
-.profile_name{
+.profile_name {
     color: var(--sw-white);
     font-weight: 700;
 }
+
 /* #endregion side_bar */
 
 /* #region main */
@@ -377,32 +378,32 @@ main h4 {
         display: none;
     }
 
-    .side_bar_sm{
+    .side_bar_sm {
         height: 100%;
     }
 
-    .home_sm{
+    .home_sm {
         padding-top: 6px;
     }
 
     .home_sm,
     .search_sm,
-    .library_sm{
+    .library_sm {
         scale: .9;
         filter: invert(0.4);
     }
 
     /* .side_bar_top */
-    .logo_sm>img{
+    .logo_sm>img {
         width: 100%;
     }
 
-    .install_icon_sm>img{
+    .install_icon_sm>img {
         padding-right: 5px;
         width: 2rem;
     }
 
-    .profile_icon_sm{
+    .profile_icon_sm {
         background-color: var(--sw-dark-soft);
         border-radius: 50%;
         padding: 2px;
@@ -411,8 +412,8 @@ main h4 {
         position: relative;
         margin-bottom: .5rem;
     }
-    
-    .profile_icon_sm>img{
+
+    .profile_icon_sm>img {
         width: 1.3rem;
         position: absolute;
         left: 50%;
