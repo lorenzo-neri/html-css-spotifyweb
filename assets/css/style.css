@@ -79,6 +79,10 @@ a{
     color: var(--sw-light);
 }
 
+.side_bar_lg{
+    justify-content: space-between;
+}
+
 .logo_desktop {
     width: 70%;
     padding-bottom: 1rem;
@@ -128,6 +132,19 @@ li{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.personal_playlist{
+    margin: 1rem 0;
+    font-size: 0.9rem;
+    line-height: 2;
+    height: 16rem;
+    overflow: auto;
+}
+
+/* side_bar_bottom */
+.side_bar_bottom{
+    
 }
 
 /* #endregion side_bar */
