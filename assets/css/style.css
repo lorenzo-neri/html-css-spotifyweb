@@ -4,8 +4,7 @@
     box-sizing: border-box;
 }
 
-/* passando ad un computer più piccolo mi sono reso conto di un bug: il mio html, la mia pagina per intera, presenta uno spazio bianco sottostante, che dal computer principale non è visibile, riesco a togliere questo spazio bianco dando all'html un overflow:hidden; ma non so da cosa dipenda
-CHIEDI AL MAIN TEACHER O A UN TUTOR */
+/* passando ad un computer più piccolo mi sono reso conto di un bug: il mio html, la mia pagina per intera, presenta uno spazio bianco sottostante, che dal computer principale non è visibile, riesco a togliere questo spazio bianco dando all'html un overflow:hidden; ma non so da cosa dipenda */
 html {
     overflow: hidden;
 }
@@ -126,15 +125,23 @@ li {
 ul>li>a:hover,
 .add_playlist:hover,
 .personal_playlist>ul>li:hover,
-.install:hover {
+.install:hover,
+#subtitle:hover,
+.icon_current_song>i:hover {
     filter: brightness(10);
+}
+
+#subtitle:hover {
+    text-decoration: underline;
 }
 
 ul>li>a,
 .add_playlist,
 .personal_playlist>ul>li,
-.install {
-    transition: .3s;
+.install,
+#subtitle,
+.icon_current_song>i {
+    transition: .2s;
 }
 
 .vertical_underline {
@@ -383,53 +390,62 @@ main h4 {
     color: var(--sw-white);
 }
 
-.song{
+.song {
     padding-left: 10px;
 }
 
-.song_title{
+.song_title {
     padding: 10px;
     font-size: .9rem;
 }
 
-#subtitle{
+#subtitle {
     font-size: 0.6rem;
     color: var(--sw-dark-soft);
+    transition: .2s;
 }
 
-.song_image{
+.song_image {
     width: 50px;
     aspect-ratio: 1;
     display: flex;
     align-items: center;
 }
 
-.song_image>img{
+.song_image>img {
     width: 100%;
 }
 
-.icon_current_song{
+.icon_current_song {
     gap: .5rem;
     color: var(--sw-dark-soft);
 }
 
-#timing{
+.timing_btn>.fa-circle-play:hover {
+    scale: 1.2;
+}
+
+.timing_btn>.fa-circle-play {
+    transition: .2s;
+}
+
+#timing {
     width: 80%;
     line-height: 3rem;
     padding-top: 1rem;
 }
 
-.timing_btn{
+.timing_btn {
     gap: 2rem;
 }
 
-.timing_bar{
+.timing_bar {
     width: 60%;
     font-size: .6rem;
     max-width: 600px;
 }
 
-.bar{
+.bar {
     width: 80%;
     margin: auto;
     background-color: var(--sw-dark-soft);
@@ -438,7 +454,15 @@ main h4 {
     position: relative;
 }
 
-.real_time_bar{
+.bar:hover .real_time_bar {
+    background-color: var(--sw-success);
+}
+
+.bar:hover .joystick {
+    display: block;
+}
+
+.real_time_bar {
     width: 20%;
     background-color: var(--sw-light);
     height: 4px;
@@ -446,16 +470,27 @@ main h4 {
     position: absolute;
 }
 
-.volume{
+.joystick {
+    width: 13px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: var(--sw-white);
+    position: absolute;
+    right: 0;
+    top: -4px;
+    display: none;
+}
+
+.volume {
     margin-right: 1rem;
 }
 
-.volume_icon{
+.volume_icon {
     gap: 1rem;
     padding-right: .5rem;
 }
 
-.sound{
+.sound {
     width: 50%;
 }
 
@@ -490,11 +525,11 @@ main h4 {
         width: calc(100% / 12 * 3);
     }
 
-    .icon_current_song{
+    .icon_current_song {
         flex-direction: column;
     }
 
-    .timing_btn{
+    .timing_btn {
         gap: 1.5rem;
     }
 
@@ -505,41 +540,41 @@ main h4 {
 /* #region mobile */
 
 @media screen and (max-width: 475px) {
-    
+
     /* #side_bar */
     #side_bar {
         width: 50px;
     }
-    
+
     .side_bar_lg {
         display: none;
     }
-    
+
     .side_bar_sm {
         height: 100%;
     }
-    
+
     .home_sm {
         padding-top: 6px;
     }
-    
+
     .home_sm,
     .search_sm,
     .library_sm {
         scale: .9;
         filter: invert(0.4);
     }
-    
+
     /* .side_bar_top */
     .logo_sm>img {
         width: 100%;
     }
-    
+
     .install_icon_sm>img {
         padding-right: 5px;
         width: 2rem;
     }
-    
+
     .profile_icon_sm {
         background-color: var(--sw-dark-soft);
         border-radius: 50%;
@@ -549,47 +584,51 @@ main h4 {
         position: relative;
         margin-bottom: .5rem;
     }
-    
+
     .profile_icon_sm>img {
         width: 1.3rem;
         position: absolute;
         left: 50%;
         transform: translate(-50%);
     }
-    
+
     .home_sm:hover,
     .search_sm:hover,
     .library_sm:hover {
         filter: brightness(10);
     }
-    
+
     .home_sm,
     .search_sm,
     .library_sm {
         transition: .3s;
     }
-    
+
     /* main */
     main {
         width: calc(100vw - 50px);
     }
-    
+
     /*** #page_bottom ***/
-    
+
     /* .col-sm-4 {
         width: calc(100% / 12 * 4);
     } */
-    
-    .song_image{
+
+    .song_image {
         width: 40px;
     }
-    
-    .icon_current_song{
+
+    .icon_current_song {
         padding-right: 10px;
     }
-    
-    .timing_btn{
+
+    .timing_btn {
         gap: .9rem;
+    }
+
+    .timing_bar {
+        gap: 4px;
     }
 }
 

@@ -20,7 +20,7 @@
     </head>
 
     <body class>
-        <section id="page_top" class="d-flex">
+        <div id="page_top" class="d-flex">
 
             <section id="side_bar">
                 <nav class="side_bar_lg container d-flex fd-column jc-between">
@@ -345,7 +345,7 @@
             </main>
             <!-- /main -->
 
-        </section>
+        </div>
         <!-- /#page_top -->
 
         <section id="page_bottom" class="d-flex jc-between">
@@ -355,7 +355,7 @@
 
                 <div class="song d-flex">
                     <div class="song_image">
-                        <img src="./assets/img/sinister.jpeg" alt="">
+                        <img src="./assets/img/sinister.jpeg" alt>
                     </div>
                     <div class="song_title">
                         <div>
@@ -377,7 +377,8 @@
             </div>
             <!---------- /#current_song ---------->
 
-            <div id="timing" class="col-8 col-sm-4 d-flex fd-column jc-center ai-center">
+            <div id="timing"
+                class="col-8 col-sm-4 d-flex fd-column jc-center ai-center">
 
                 <div class="timing_btn d-flex ai-center">
                     <i class="fa-solid fa-shuffle"></i>
@@ -391,7 +392,10 @@
                 <div class="timing_bar d-flex jc-between ai-center">
                     <div class="time">0:25</div>
                     <div class="bar">
-                        <div class="real_time_bar"></div>
+                        <div class="real_time_bar">
+                            <div class="joystick"></div>
+                        </div>
+
                     </div>
                     <div class="time">4:35</div>
                 </div>
@@ -399,14 +403,17 @@
             </div>
             <!---------- /#timing ---------->
 
-            <div id="volume" class="col-2 col-sm-4 d-flex jc-center ai-center p_0">
+            <div id="volume"
+                class="col-2 col-sm-4 d-flex jc-center ai-center p_0">
                 <div class="volume_icon d-flex">
                     <i class="fa-solid fa-list-ul"></i>
                     <i class="fa-solid fa-display"></i>
                     <i class="fa-solid fa-volume-high"></i>
                 </div>
                 <div class="sound bar">
-                    <div class="real_time_bar"></div>
+                    <div class="real_time_bar">
+                        <div class="joystick"></div>
+                    </div>
                 </div>
             </div>
             <!---------- /#volume ---------->
