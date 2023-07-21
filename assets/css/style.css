@@ -413,6 +413,39 @@ main h4 {
     color: var(--sw-dark-soft);
 }
 
+#timing{
+    width: 80%;
+    line-height: 3rem;
+    padding-top: 1rem;
+}
+
+.timing_btn{
+    gap: 2rem;
+}
+
+.timing_bar{
+    width: 60%;
+    font-size: .6rem;
+    max-width: 600px;
+}
+
+.bar{
+    width: 80%;
+    margin: auto;
+    background-color: var(--sw-dark-soft);
+    height: 4px;
+    border-radius: 2px;
+    position: relative;
+}
+
+.real_time_bar{
+    width: 20%;
+    background-color: var(--sw-light);
+    height: 4px;
+    border-radius: 2px;
+    position: absolute;
+}
+
 /********* #endregion page_bottom *********/
 
 /********* #region media queries *********/
@@ -447,6 +480,11 @@ main h4 {
     .icon_current_song{
         flex-direction: column;
     }
+
+    .timing_btn{
+        gap: 1.5rem;
+    }
+
 }
 
 /* #endregion tablet */
@@ -454,41 +492,41 @@ main h4 {
 /* #region mobile */
 
 @media screen and (max-width: 475px) {
-
+    
     /* #side_bar */
     #side_bar {
         width: 50px;
     }
-
+    
     .side_bar_lg {
         display: none;
     }
-
+    
     .side_bar_sm {
         height: 100%;
     }
-
+    
     .home_sm {
         padding-top: 6px;
     }
-
+    
     .home_sm,
     .search_sm,
     .library_sm {
         scale: .9;
         filter: invert(0.4);
     }
-
+    
     /* .side_bar_top */
     .logo_sm>img {
         width: 100%;
     }
-
+    
     .install_icon_sm>img {
         padding-right: 5px;
         width: 2rem;
     }
-
+    
     .profile_icon_sm {
         background-color: var(--sw-dark-soft);
         border-radius: 50%;
@@ -498,36 +536,48 @@ main h4 {
         position: relative;
         margin-bottom: .5rem;
     }
-
+    
     .profile_icon_sm>img {
         width: 1.3rem;
         position: absolute;
         left: 50%;
         transform: translate(-50%);
     }
-
+    
     .home_sm:hover,
     .search_sm:hover,
     .library_sm:hover {
         filter: brightness(10);
     }
-
+    
     .home_sm,
     .search_sm,
     .library_sm {
         transition: .3s;
     }
-
+    
     /* main */
     main {
         width: calc(100vw - 50px);
     }
-
+    
     /*** #page_bottom ***/
-
+    
     /* .col-sm-4 {
         width: calc(100% / 12 * 4);
     } */
+    
+    .song_image{
+        width: 40px;
+    }
+    
+    .icon_current_song{
+        padding-right: 10px;
+    }
+    
+    .timing_btn{
+        gap: .9rem;
+    }
 }
 
 /* #endregion mobile */
