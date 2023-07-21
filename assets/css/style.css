@@ -385,7 +385,16 @@ main h4 {
 
 .song{
     padding-left: 10px;
-    
+}
+
+.song_title{
+    padding: 10px;
+    font-size: .9rem;
+}
+
+#subtitle{
+    font-size: 0.6rem;
+    color: var(--sw-dark-soft);
 }
 
 .song_image{
@@ -400,7 +409,8 @@ main h4 {
 }
 
 .icon_current_song{
-    gap: 1rem;
+    gap: .5rem;
+    color: var(--sw-dark-soft);
 }
 
 /********* #endregion page_bottom *********/
@@ -432,6 +442,10 @@ main h4 {
 
     .col-md-3 {
         width: calc(100% / 12 * 3);
+    }
+
+    .icon_current_song{
+        flex-direction: column;
     }
 }
 
