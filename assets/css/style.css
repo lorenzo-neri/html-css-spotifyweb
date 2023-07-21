@@ -451,6 +451,18 @@ main h4 {
         transform: translate(-50%);
     }
 
+    .home_sm:hover,
+    .search_sm:hover,
+    .library_sm:hover {
+        filter: brightness(10);
+    }
+
+    .home_sm,
+    .search_sm,
+    .library_sm {
+        transition: .3s;
+    }
+
     /* main */
     main {
         width: calc(100vw - 50px);
