@@ -446,6 +446,19 @@ main h4 {
     position: absolute;
 }
 
+.volume{
+    margin-right: 1rem;
+}
+
+.volume_icon{
+    gap: 1rem;
+    padding-right: .5rem;
+}
+
+.sound{
+    width: 50%;
+}
+
 /********* #endregion page_bottom *********/
 
 /********* #region media queries *********/
