@@ -32,6 +32,10 @@ body {
     padding: .9rem;
 }
 
+.col-8{
+    width: calc(100% / 12 * 8);
+}
+
 a {
     text-decoration: none;
 }
@@ -43,6 +47,10 @@ a {
 
 .px_2 {
     padding-bottom: 1rem;
+}
+
+.p_0{
+    padding: 0;
 }
 
 /* .p_0 {
@@ -80,6 +88,10 @@ a {
 
 .s-between {
     justify-content: space-between;
+}
+
+.s-around{
+    justify-content: space-around;
 }
 
 /**************** Desktop First ****************/
@@ -365,7 +377,7 @@ main h4 {
 /********* #region page_bottom *********/
 #page_bottom {
     height: 90px;
-    z-index: 999;
+    /* z-index: 999; */
     position: relative;
     background-color: var(--sw-dark);
 }
@@ -381,6 +393,10 @@ main h4 {
     .col-lg-3 {
         width: calc(100% / 12 * 3);
     }
+
+    .col-lg-6{
+        width: 50%;
+    }
 }
 
 /* #endregion laptop */
@@ -391,6 +407,10 @@ main h4 {
 
     .col-md-6 {
         width: 50%;
+    }
+
+    .col-md-3{
+        width: calc(100% / 12 * 3);
     }
 }
 
@@ -453,13 +473,13 @@ main h4 {
 
     .home_sm:hover,
     .search_sm:hover,
-    .library_sm:hover {
+    .library_sm:hover{
         filter: brightness(10);
     }
 
     .home_sm,
     .search_sm,
-    .library_sm {
+    .library_sm{
         transition: .3s;
     }
 
@@ -467,6 +487,12 @@ main h4 {
     main {
         width: calc(100vw - 50px);
     }
+
+    /*** #page_bottom ***/
+
+    /* .col-sm-4{
+        width: calc(100% / 12 * 4);
+    } */
 }
 
 /* #endregion mobile */
@@ -487,11 +513,15 @@ main h4 {
 }
 
 .debug #page_bottom {
-    background-color: red;
+    background-color: lightcoral;
 }
 
 .debug .col-2 {
-    background-color: red;
+    background-color: lightgoldenrodyellow;
+}
+
+.debug .col-8{
+    background-color: lightblue;
 }
 
 /* #endregion debug */

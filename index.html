@@ -19,7 +19,7 @@
         <!-- /font-awesome -->
     </head>
 
-    <body class>
+    <body class="">
         <section id="page_top" class="d-flex">
 
             <section id="side_bar">
@@ -32,25 +32,18 @@
                         <!-- /.logo_desktop -->
 
                         <ul>
-                            <li class="home_lg">
-                                <div class="vertical_underline"></div>
-                                <a class="d-flex ai-center" href="#">
-                                    <img class src="./assets/img/home.svg" alt>
+                            <li><a class="d-flex ai-center" href="#">
+                                    <img src="./assets/img/home.svg" alt>
                                     Home
-                                </a>
-                            </li>
-                            <li class="search_lg">
-                                <a class="d-flex ai-center" href="#">
+                                </a></li>
+                            <li><a class="d-flex ai-center" href="#">
                                     <img src="./assets/img/search.svg" alt>
                                     Cerca
-                                </a>
-                            </li>
-                            <li class="library_lg">
-                                <a class="d-flex ai-center" href="#">
+                                </a></li>
+                            <li><a class="d-flex ai-center" href="#">
                                     <img src="./assets/img/libreria.svg" alt>
                                     La tua libreria
-                                </a>
-                            </li>
+                                </a></li>
                         </ul>
                         <!-- /ul -->
 
@@ -75,11 +68,6 @@
                                     <li>Dance</li>
                                     <li>Back to the Future</li>
                                     <li>Piano Solo</li>
-                                    <li>Nome Playlist</li>
-                                    <li>Nome Playlist</li>
-                                    <li>Nome Playlist</li>
-                                    <li>Nome Playlist</li>
-                                    <li>Nome Playlist</li>
                                 </ul>
                             </div>
                         </div>
@@ -360,7 +348,40 @@
         </section>
         <!-- /#page_top -->
 
-        <section id="page_bottom"></section>
+        <section id="page_bottom" class="d-flex jc-between debug">
+
+            <div id="current_song" class="col-2 col-lg-3 col-sm-4 d-flex s-around ai-center p_0">
+                
+                <div class="song d-flex">
+                    <div class="song_image">
+                        song image
+                    </div>
+                    <div class="song_title">
+                        song title
+                    </div>
+                </div>
+                <!-- /.song -->
+                
+                <div class="icon_current_song d-flex">
+                    like 
+                    add playlist
+                </div>
+                <!-- /.icon_current_song -->
+
+            </div>
+            <!---------- /#current_song ---------->
+
+            <div id="timing" class="col-8 col-lg-6 col-sm-4">
+                
+            </div>
+            <!---------- /#timing ---------->
+
+            <div id="volume" class="col-2 col-lg-3 col-sm-4 p_0">
+                
+            </div>
+            <!---------- /#volume ---------->
+
+        </section>
         <!-- /#page_bottom -->
 
     </body>
